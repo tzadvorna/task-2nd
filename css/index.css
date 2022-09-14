@@ -16,19 +16,24 @@
     .container {
         max-width: 980px;
         margin: auto;
+       
     }
 
 #header {
     background-color: var(--background-color);
     color: var(--text-color);
     padding: 5px;
-}
+    }
+
 
 .header-nav__menu {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex: 1;
+    font-size: 20px;
+    
+    
 }
 
 #header-logo {
@@ -40,7 +45,7 @@
     text-decoration: none;
     color: var(--text-color);
     font-weight: 800;
-    }
+        }
 .header-nav__menu-items:hover {
     text-decoration: underline;
     color: var(--light-text-color);
@@ -51,10 +56,21 @@
     }
 }
 .header-banner {
-    background-image: url(../img/banner.jpg);
+    background: url(../img/banner.jpg); 
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: 50% 50%;
         }
 h1 {
     text-align: center;
     color: var(--light-text-color);
     font-size: 30px;
+}
+.img {
+    display: block;
+    width: 100%;
 }
