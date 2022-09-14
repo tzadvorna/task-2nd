@@ -10,6 +10,12 @@
     scroll-behavior: smooth;
     --text-color: #123644;
     --background-color: #dcdcdc;
+    --light-text-color: #ffffff;
+    }
+
+    .container {
+        max-width: 980px;
+        margin: auto;
     }
 
 #header {
@@ -33,13 +39,22 @@
     display: block;
     text-decoration: none;
     color: var(--text-color);
+    font-weight: 800;
     }
 .header-nav__menu-items:hover {
     text-decoration: underline;
+    color: var(--light-text-color);
 }
 @media (min-width: 500px) {
     .header-nav > .container {
         display: flex;
     }
 }
-
+.header-banner {
+    background-image: url(../img/banner.jpg);
+        }
+h1 {
+    text-align: center;
+    color: var(--light-text-color);
+    font-size: 30px;
+}
